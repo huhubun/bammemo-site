@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Bammemo Serif";
+    src: url("../fonts/Bammemo Serif.woff2") format("woff2"), url("../fonts/Bammemo Serif.ttf") format("ttf");
+}
+
+.bammemo-font-text {
+    font-family: "Bammemo Serif" !important;
+}
+
+.bammemo-desktop-browser {
+    background-image: linear-gradient(to top, #e6dee9 0%, #bdc2e8 50%, #e6dee9 100%);
+    background-size: 100% 100%;
+    animation: gradient-flow 6s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-size: 100% 100%;
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-size: 400% 400%;
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+        background-position: 50% 0%;
+    }
+}
